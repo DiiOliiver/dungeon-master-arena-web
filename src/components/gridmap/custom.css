@@ -1,0 +1,104 @@
+.grid--layout {
+    height: 47em !important;
+}
+
+@media (max-width: 1380px) {
+    .grid--layout {
+        height: 40em !important;
+    }
+}
+
+@media (max-width: 1172px) {
+    .grid--layout {
+        height: 33em !important;
+    }
+}
+
+@media (min-width: 743px) and (max-width: 984px) {
+    .grid--layout {
+        height: 37em !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .grid--layout {
+        height: 26em !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .grid--layout {
+        height: 19em !important;
+    }
+}
+
+@media (max-width: 414px) {
+    .grid--layout {
+        height: 18em !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .grid--layout {
+        height: 17em !important;
+    }
+}
+
+@media (max-width: 376px) {
+    .grid--layout {
+        height: 16em !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .grid--layout {
+        height: 15em !important;
+    }
+}
+
+@media (max-width: 344px) {
+    .grid--layout {
+        height: 14em !important;
+    }
+}
+
+.vgl-layout {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.vgl-layout::before {
+    position: absolute;
+    left: 0;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    margin: 5px;
+    content: '';
+    background-image: linear-gradient(to right, lightgrey 1px, transparent 1px),
+    linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+    background-repeat: repeat;
+    background-size: calc(calc(100% - 5px) / 12) 40px;
+}
+
+:deep(.vgl-item:not(.vgl-item--placeholder)) {
+    background-color: #ccc;
+    border: 1px solid black;
+}
+
+:deep(.vgl-item--resizing) {
+    opacity: 90%;
+}
+
+:deep(.vgl-item--static) {
+    background-color: #cce;
+}
+
+.text {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 24px;
+    text-align: center;
+}
